@@ -3,9 +3,13 @@
 ##1 Implementation Notes
 
 1) Requirement is stated below and the acceptance test class OrderBoardAcceptanceTest demonstrates it, using a semantice of Given When Then in test name to depict scenario
+
 2) The method to get the live order board summaries takes order type as a parameter (BUY/SELL). This wan't clear from the spec so I have made this assumption
+
 3) The order does not have an identifying Id (which would normally not be the case) and therefore when merging two orders on price per quantity I have used user Id and quantity to show a breakdown of the merge
+
 4) The solution is not thread safe in the OrderStore as it is backed by an ArrayList. This would need to be immproved
+
 5) Performance requirements are not given so at this stage I concentrated on functionality first
 
 ##2 Requirement
