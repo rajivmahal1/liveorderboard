@@ -8,9 +8,7 @@
 
 3) An order does not have an identifying Id (which would normally not be the case) and therefore when merging two orders on price per quantity I have used user Id and quantity to show a breakdown of the merge
 
-4) The solution is not thread safe in OrderStore as it is backed by an ArrayList. Requirements for concurrency and a strategy for managing it would need to be devised.
-
-5) Concentrated on functionality first and performance should also be considered.
+4) Concentrated on functionality first. Performance requirements would need to be quantified as well as requirements for concurrency and a strategy for managing it.
 
 ##2 Requirement
 
