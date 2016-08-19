@@ -1,16 +1,4 @@
-# lob-interview
-
-##1 Implementation Notes
-
-1) Requirement is stated below as demonstrated in OrderBoardAcceptanceTest
-
-2) To get the live order board summaries an order type is required as a parameter (BUY/SELL). Requirements weren't clear.
-
-3) An order does not have an identifying Id (which would normally not be the case) and therefore when merging two orders on price per quantity I have used user Id and quantity to show a breakdown of the merge
-
-4) Concentrated on functionality first. Performance requirements would need to be quantified as well as requirements for concurrency and a strategy for managing it.
-
-##2 Requirement
+# Live Order Board Requirement
 
 A 'Live Order Board' with the following functionality:
 
